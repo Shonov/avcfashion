@@ -1,0 +1,87 @@
+extends ../includes/main
+
+block body
+    section.container.container--main
+        .container__content
+            .outer-links-container
+                a.outer-link.outer-link--active(href="/") Home
+                | &nbsp; / &nbsp;
+                a.outer-link(href="atelier.html") Atelier
+            h3.container__title.container__title--atelier Atelier
+
+            .atelier__title Now VIP&nbsp
+                br.pc-hidden
+                | atelier service
+                br
+                | available in Bahrain.
+            .atelier__addition.mobile-hidden Book your appointment with one of our designers and get your dream dress in no time.
+
+            form.services__form.learn-more-form.atelier__form
+                .learn-more-form__image
+                    .learn-more-form__image--q
+                        .learn-more-form__image--w
+                .atelier__addition.pc-hidden Book your appointment with one of our designers and get your dream dress in no time.
+                input.learn-more-form__field(type="text", placeholder="Your name", name="name", required)
+                input.learn-more-form__field(type="tel", placeholder="Phone", name="phone", required)
+                button.has-spinner.learn-more-form__button(type="submit", value="Learn more") Learn more
+
+            h3.container__title.atelier__how-do-title How do we do it?
+
+            .atelier__how-do.mobile-hidden
+                .how-do__initial
+                    .how-do__block
+                        .how-do__step 01
+                        .how-do__action Based on a free consultation&nbsp
+                            br
+                            | we will agree on style, fabrics&nbsp
+                            br
+                            | and accessories.
+
+                .how-do__line
+
+                .how-do__initial
+                    .how-do__block
+                        .how-do__step 02
+                        .how-do__action You will receive a detailed&nbsp
+                            br
+                            | FREE sketch of your future&nbsp
+                            br
+                            | gown.
+
+                .how-do__line
+
+                .how-do__initial
+                    .how-do__block
+                        .how-do__step 03
+                        .how-do__action Once style is finalized we will&nbsp
+                            br.mobile-hidden
+                            | proceed with measurement&nbsp
+                            br.mobile-hidden
+                            | session and production.
+
+            .atelier__how-do.pc-hidden
+                .how-do__initial
+                    .how-do__block
+                        .how-do__step 01
+                        .how-do__line
+                    .how-do__action Based on a free consultation we will agree on style, fabrics and accessories.
+
+
+                .how-do__initial
+                    .how-do__block
+                        .how-do__step 02
+                        .how-do__line
+                    .how-do__action You will receive a detailed FREE sketch of your future gown.
+
+                .how-do__initial
+                    .how-do__block
+                        .how-do__step 03
+                    .how-do__action Once style is finalized we will proceed with measurement session and production.
+
+            .atelier__couture Enjoy your Couture experience!
+            .galleria.galleria-container.atelier__images
+                .galleria__first-path.atelier__first-block-images
+                    .galleria__image.atelier__first-block-images--first-image
+                    .galleria__image.atelier__first-block-images--second-image
+                .galleria__second-path.atelier__second-block-images
+                    .galleria__image.atelier__second-block-images--third-image

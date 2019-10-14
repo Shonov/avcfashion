@@ -1,0 +1,220 @@
+.atelier {
+  &__title {
+    font-size: 55px;
+    font-family: "AngleciaProDisplay", sans-serif;
+    color: rgb(110, 172, 193);
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    margin-bottom: 40px;
+  }
+
+  &__how-do-title {
+    line-height: 1.2;
+  }
+
+  &__how-do {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__addition {
+    font-size: 28px;
+    font-family: Lintel, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  &__couture {
+      font-size: 28px;
+      font-family: Lintel, sans-serif;
+      color: rgb(255, 255, 255);
+      line-height: 1.2;
+      text-align: left;
+    margin-bottom: 30px;
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 15px;
+  }
+
+  &__first-block-images {
+    display: flex;
+    width: 100%;
+    flex: 1;
+
+    &--first-image {
+      background: url(../img/atelier/first-sketch.png) no-repeat;
+      margin-right: 15px;
+    }
+
+    &--second-image {
+      background: url(../img/atelier/second-sketch.png) no-repeat;
+    }
+
+    &--first-image,
+    &--second-image {
+      min-width: 320px;
+      min-height: 400px;
+      background-size: cover;
+      width: 100%;
+    }
+  }
+
+  &__second-block-images {
+    width: 100%;
+    flex: 1;
+    margin-top: 15px;
+
+    &--third-image {
+      min-width: 320px;
+      min-height: 460px;
+      background: url(../img/atelier/third-sketch.png) no-repeat center;
+      background-size: cover;
+      width: 100%;
+    }
+  }
+  //&__
+}
+
+.how-do {
+  &__initial {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    //flex: 1;
+  }
+
+  &__block {
+
+  }
+
+  &__step {
+    font-size: 20px;
+    font-family: Lintel, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    background-color: rgb(110, 172, 193);
+    width: 20px;
+    padding: 5px 6px 0;
+    margin: 0;
+  }
+
+  &__action {
+    font-size: 28px;
+    font-family: Lintel, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  &__line {
+    background-color: rgb(110, 172, 193);
+    width: 60px;
+    height: 2px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 620px) {
+  .atelier {
+    &__second-block-images--third-image {
+      min-height: 220px !important;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .atelier {
+
+    &__how-do {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      text-align: center;
+      font-size: 44px;
+    }
+
+    &__addition {
+      text-align: center;
+      font-size: 22px;
+      padding: 0 25px;
+      margin-top: 30px;
+    }
+
+    &__first-block-images {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    &__first-block-images--second-image {
+      margin: 20px 0;
+    }
+
+    &__second-block-images--third-image {
+      min-height: 420px;
+    }
+
+    &__second-block-images {
+      margin-top: 0;
+    }
+
+    &__images {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 20px 0;
+    }
+
+    &__couture {
+      text-align: center;
+      font-size: 22px;
+    }
+  }
+
+  .how-do {
+
+    &__initial {
+      align-items: end;
+      margin-bottom: 10px;
+    }
+
+    &__block {
+      display: flex;
+      align-items: end;
+      flex-direction: column;
+    }
+
+    &__step {
+      //margin-right: 20px;
+      margin: 2px 10px 0 0;
+    }
+
+    &__action {
+      font-size: 22px;
+      margin-top: 0;
+    }
+
+    &__line {
+      width: 3px;
+      height: 60px;
+      margin-top: 10px;
+      margin-left: 14px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+extends ../includes/main
+
+block body
+  section.container.container--main
+    .container__content
+      .outer-links-container
+        a.outer-link.outer-link--active(href="/") Home
+        | &nbsp; / &nbsp;
+        a.outer-link(href="about_us.html") About us
+      h3.container__title About us
+      .about-us.about-us-container
+        .mission.mission-container
+          h3.mission__title Our Mission:
+          .mission__text
+            | To support emerging talents, fashion start-ups, and brands in the region and across the globe.
+        .about-us__help-us
+          h4 How We Help You:
+          ul.helped-list(type="square")
+            li.helped-list__item We provide our customers with all the required support and real-life tested business techniques.
+            li.helped-list__item We offer fashion business guidelines adapted to our customer’s brand identity and positioning.
+            li.helped-list__item We specialize in fashion production support from inception to completion.
+            li.helped-list__item We price according to customer needs and requirements.
+      .galleria.galleria-container
+        .galleria__first-path
+          .galleria__image.galleria__first-path--first-image
+          .galleria__image.galleria__first-path--second-image
+        .galleria__second-path
+          .galleria__image.galleria__second-path--first-image
+          .galleria__image.galleria__second-path--second-image
+        .galleria__third-path
+          .galleria__image.galleria__third-path--first-image
+          .galleria__image.galleria__third-path--second-image
+
+      .about-us__text Our team consists of industry professionals with real-life fashion management and fashion design experience, coming from different cultural backgrounds.
+      .about-us__text We are efficient, flexible and cost-effective.

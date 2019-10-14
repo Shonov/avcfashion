@@ -1,0 +1,58 @@
+extends ../includes/main
+
+block body
+  section.container.container--main
+    .container__content
+      .outer-links-container
+        a.outer-link.outer-link--active(href="/") Home
+        | &nbsp; / &nbsp;
+        a.outer-link(href="our_services.html") Services
+      h3.container__title.container__title--services Our Services Include
+      .services.services-container
+        .services.services__content(id="concept-planning")
+          .services__title
+            img.services__title--logo(src="../img/our_services/planning.svg")
+            .services__title--text Concept & Planning
+          ul.list-services(type="square")
+            li.list-services__item Consumer research
+            li.list-services__item Color direction
+            li.list-services__item Range planning
+            li.list-services__item Seasonal concepts
+            li.list-services__item Assortment strategy
+        .services.services__content(id="identity")
+          .services__title
+            img.services__title--logo(src="../img/our_services/sketch.svg")
+            .services__title--text Identity
+          ul.list-services(type="square")
+            li.list-services__item Concepts
+            li.list-services__item Branding
+            li.list-services__item Art direction
+            li.list-services__item Silhouettes
+        .services.services__content(id="design-development")
+          .services__title
+            img.services__title--logo(src="../img/our_services/dress.svg")
+            .services__title--text Design & Development
+          ul.list-services(type="square")
+            li.list-services__item Technical sketches
+            li.list-services__item Technical specification packs
+            li.list-services__item Fashion illustration
+            li.list-services__item Pattern cutting
+            li.list-services__item Development & production
+            li.list-services__item Textiles & accessories selections
+            li.list-services__item Communication
+        .services.services__content(id="presentation")
+          .services__title
+            img.services__title--logo(src="../img/our_services/camera.svg")
+            .services__title--text Presentation
+          ul.list-services(type="square")
+            li.list-services__item Photography
+            li.list-services__item Digital marketing
+            li.list-services__item Representation
+      h1.services__text Learn More About AVC Fashion Design consultancy
+      form.services__form.learn-more-form
+        .learn-more-form__image
+          .learn-more-form__image--q
+            .learn-more-form__image--w
+        input.learn-more-form__field(type="text", placeholder="Your name", name="name", required)
+        input.learn-more-form__field(type="tel", placeholder="Phone", name="phone", required)
+        button.has-spinner.learn-more-form__button(type="submit", value="Learn more") Learn more

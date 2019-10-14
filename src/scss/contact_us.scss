@@ -1,0 +1,185 @@
+.contact-us {
+  &-container {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: rgb(25, 25, 25);
+  padding: 20px 30px;
+
+  &__title {
+    font-size: 25px;
+    font-family: "Lintel", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  &__field {
+    border-radius: 5px;
+    background-color: rgb(41, 41, 41);
+    border: none;
+    margin: 10px 0;
+    padding: 15px;
+    color: white;
+  }
+
+  &__button {
+    border-radius: 5px;
+    background-color: rgb(41, 41, 41);
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 10px;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-phone-numbers {
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+  }
+
+  &__tel {
+    display: flex;
+    font-size: 25px;
+    font-family: "Lintel", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    font-weight: 900;
+
+    &--link {
+      color: white;
+      cursor: pointer;
+    }
+
+    & span {
+      color: white;
+      margin-right: 10px;
+      font-weight: 100;
+    }
+  }
+
+  &__messages-logo {
+    width: 36px;
+    height: 36px;
+
+    &:first-child {
+      margin-right: 5px;
+    }
+  }
+
+  &__images {
+    margin-right: 10px;
+  }
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+
+  &__company-container-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  &__logo {
+    width: 23px;
+    height: 23px;
+    margin: 0 10px;
+  }
+
+  &__data {
+    font-size: 20px;
+    font-family: "Lintel", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-us__title {
+    order: 1;
+  }
+
+  .contact-us {
+    order: 4;
+  }
+  .contact-form {
+    margin: 20px;
+
+    &__title {
+      font-size: 21px;
+
+      & br {
+        display: none;
+      }
+    }
+  }
+
+  .contact-phone-numbers {
+    order: 2;
+    flex-direction: column;
+    align-items: center;
+
+    &__tel {
+      flex-direction: column;
+      align-items: center;
+      font-weight: bold;
+
+      & span {
+        font-size: 18.784px;
+        margin-right: 0;
+      }
+    }
+
+    &__container {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+
+    &__images {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  .contact-details {
+    order: 3;
+    flex-direction: column;
+    align-items: center;
+
+    &__company-container-link {
+      flex-direction: column;
+    }
+
+    &__logo {
+      width: 27px;
+      height: 27px;
+      margin: 30px 0 10px 0;
+    }
+  }
+}

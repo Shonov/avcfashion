@@ -1,0 +1,59 @@
+include ../includes/header.pug
+
+body.tailoring
+    include ../includes/gtm-noscript.pug
+    header.header
+        .header__content.header--tailoring
+            .header-logo.header-logo--tailoring-logo
+                a(href="//avcfashion.com")
+                    img.header-logo__img.header-logo__img--tailoring(src="../img/logo.png")
+                .header-logo__text-container.tailoring__logo-container
+                    .header-logo__text--logo.tailoring__logo AVC Fashion
+                    .header-logo__text--logo.tailoring__logo Design Consultancy
+                    .header-logo__text--utp.tailoring__text-logo  Creative & Efficient
+            .header-menu.header-menu--tailoring
+                .header-menu__top-container
+                    .header-menu__instagram-container.header-menu__instagram-container--tailoring
+                        img.header-menu__icon--tailoring(src="../img/icon/white/instagram.svg")
+                        a.header-menu__instagram--tailoring(href="https://www.instagram.com/avc_fashion_consultancy/" target="_blank") avc_fashion_consultancy
+
+    .sending-email-success
+        .sending-email-success__full-container
+            .sending-email-success__close-container
+                img.sending-email-success__close(src="../img/close.png")
+            .sending-email-success__title Thank You!
+            .sending-email-success__message Your message has been sent
+            .sending-email-success__back-link Back to the main page
+
+    section.container.tailoring__container
+        .tailoring__content
+            .tailoring__text-block
+                .tailoring__title Now VIP Couture Tailoring service available in Bahrain.
+                .tailoring__free-desinger Get a free designer&nbsp;
+                    br.pc-hidden
+                    | appointment right at&nbsp;
+                    br.pc-hidden
+                    | home.
+                .tailoring__description Now you can receive free design consultation and measurement session right at your living room.&nbsp;
+                    | Just imagine you don&rsquo;t even have to live the house
+                    | to get your gown ready. Sounds already great, right?
+                    br
+                    br
+                    | Get a&nbsp;
+                    span.white-color FREE&nbsp;
+                    | personal&nbsp;
+                    br.pc-hidden
+                    | style consultation
+                    br
+                    | and suggestions from us!
+            .tailoring__form-block
+                .tailoring__form-second-block
+                    form.tailoring__form
+                        .tailoring__form--title Book your
+                            br
+                            | appointment
+                        input.tailoring__form--input(type="text", placeholder="Name", name="name", required)
+                        input.tailoring__form--input(type="email", placeholder="Email", name="email", required)
+                        input.tailoring__form--input(type="tel", placeholder="Phone number", name="phone", required)
+                        button.has-spinner.tailoring__form--button(type="submit", value="Submit") Submit
+                    .tailoring__portfolio.pc-hidden Check our portfolio at

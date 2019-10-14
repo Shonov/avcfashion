@@ -1,0 +1,40 @@
+extends ../includes/main
+
+block body
+  section.container.container--main
+    .container__content
+      .outer-links-container
+        a.outer-link.outer-link--active(href="/") Home
+        | &nbsp; / &nbsp;
+        a.outer-link(href="our_services.html") Contact us
+      h3.container__title.contact-us__title Contact us
+      .contact-us-container.contact-us
+        form.contact-form
+          .contact-form__title To find out more about what we can do for you and your business,
+            <br/>
+            |  Please fill in the form on the left or contact us here:
+          input(type="text", placeholder="Your Name" name="name", required).contact-form__field
+          input(type="email", placeholder="Your Email" name="email", required).contact-form__field
+          textarea(rows="10", placeholder="Your Message" name="message", required).contact-form__field
+          .button-container
+            button(type="submit").has-spinner.contact-form__button.button-container__submit Send
+      .contact-phone-numbers
+        .contact-phone-numbers__container
+          .contact-phone-numbers__tel
+            span Phone number:
+            a.contact-phone-numbers__tel--link(href="tel:+79645547498") +7 (964) 554-74-98;
+        .contact-phone-numbers__container
+          .contact-phone-numbers__images
+            img.contact-phone-numbers__messages-logo(src="../img/icon/other/whatsapp.svg")
+          a(href="https://wa.me/971552084722").contact-phone-numbers__tel
+            | +971 (55) 208-47-22;
+      .contact-details
+        a.contact-details__company-container-link(href="mailto:avcfashionconsultancy@gmail.com")
+          img.contact-details__logo(src="../img/icon/white/e-mail-contact-us.svg")
+          .contact-details__data avcfashionconsultancy@gmail.com
+        a.contact-details__company-container-link(href="skype:live:8788da00e5cf6faf?chat")
+          img.contact-details__logo(src="../img/icon/white/skype.svg")
+          .contact-details__data AVC fashion consultancy
+        a.contact-details__company-container-link(href="https://www.instagram.com/avc_fashion_consultancy/")
+          img.contact-details__logo(src="../img/icon/white/instagram.svg")
+          .contact-details__data avc_fashion_consultancy

@@ -1,0 +1,348 @@
+.tailoring-services {
+  background: url("../img/tailoring-services-background.png") no-repeat;
+  background-size: cover;
+
+  & > .header {
+    background: transparent;
+  }
+}
+
+.tailoring {
+  &__content {
+    max-width: 90%;
+    display: flex;
+    margin: 100px auto 0;
+  }
+
+  &__container {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    font-size: 77px;
+    font-family: "AngleciaProDisplay", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  &__free-desinger {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 50px 0 40px 0;
+
+    &--services {
+      position: relative;
+      font-size: 45px !important;
+      text-transform: none;
+      margin: 70px 0 !important;
+
+      &:before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content:  '';
+        background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: darkturquoise; stroke-width: 6; stroke-dasharray: 13 7'/></svg>");
+        padding: 20px 50px 20px 10px;
+        margin-left: -30px;
+        margin-top: -20px;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        background-image: url("../img/dress.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        right: -45px;
+        top: -40px;
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  &__free-desinger,
+  &__description {
+    font-size: 35px;
+    font-family: "Lintel", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  &__description {
+    font-style: italic;
+  }
+
+  &__text-block {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+
+    &--services {
+      justify-content: center;
+    }
+  }
+
+  &__form-block {
+    flex: 1;
+  }
+
+  &__form-second-block {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background-color: rgb(110, 172, 193);
+    padding: 50px 60px;
+    box-sizing: border-box;
+    max-width: 670px;
+
+    &--title {
+      font-size: 55px;
+      font-family: "Lintel", sans-serif;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      text-transform: uppercase;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    &--input {
+      border-width: 1px;
+      border-color: rgb(198, 198, 198);
+      border-style: solid;
+      background-color: rgb(255, 255, 255);
+      font-family: "Lintel", sans-serif;
+      text-decoration: none;
+      padding: 30px;
+      margin-top: 20px;
+      font-size: 25px;
+
+      &::placeholder {
+        font-size: 25px;
+        font-family: "Lintel", sans-serif;
+        color: rgb(189, 189, 189);
+        line-height: 2;
+      }
+    }
+
+    &--button {
+      margin-top: 40px;
+      border: none;
+      padding: 40px 0;
+      font-size: 43px;
+      font-family: "Lintel", sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #fff;
+      background-color: rgb(42, 99, 119);
+      border-radius: 100px;
+    }
+  }
+
+  &__portfolio {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "Lintel", sans-serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-top: 50px;
+  }
+}
+
+.white-color {
+  font-weight: bold;
+  color: white;
+  font-style: normal;
+}
+
+@media (max-width: 992px) {
+  .tailoring-services {
+    background: url(../img/tailoring-services-background-mobile.png) no-repeat #535353!important;
+    background-size: cover!important;
+  }
+
+  .tailoring {
+    background: url(../img/tailoring-mobile.png) no-repeat #535353 !important;
+    background-size: contain !important;
+
+    &__container {
+      background-color: transparent;
+      padding-bottom: 120px;
+    }
+
+    &__content {
+      flex-direction: column;
+      margin-top: 80px;
+    }
+
+    &__text-block {
+      margin-right: 0;
+      display: block;
+    }
+
+    &__form-second-block {
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    &__description {
+      font-style: normal;
+      margin: 50px 0;
+
+      &--services {
+        margin: 0 0 50px 0 !important;
+      }
+    }
+
+    &__free-desinger {
+      background-color: rgb(110, 172, 193);
+      display: inline;
+      padding: 10px 10px 10px 0;
+
+      &--services {
+        background-color: transparent !important;
+        display: flex !important;
+        align-items: center;
+        font-size: 30px !important;
+        margin-bottom: 30px !important;
+
+        &:before {
+          padding: 10px;
+          margin-top: 0;
+          margin-left: -10px;
+        }
+
+        &:after {
+          right: -15px;
+        }
+      }
+    }
+
+    &__free-desinger,
+    &__description {
+      font-size: 25px;
+    }
+
+    &__title {
+      font-size: 37px;
+      margin-bottom: 40px;
+    }
+
+    &__form {
+      max-width: unset;
+      width: 100%;
+      padding: 30px;
+
+      &--title {
+        font-size: 35px;
+        margin-bottom: 10px;
+      }
+
+      &--input {
+        text-align: center;
+        padding: 20px;
+        margin-top: 10px;
+
+        &::placeholder {
+          text-align: center;
+        }
+      }
+
+      &--button {
+        font-size: 23px;
+        padding: 20px 0;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .header-menu {
+    &--tailoring {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      max-width: 90%;
+    }
+
+    &__icon--tailoring {
+      margin-bottom: 20px;
+    }
+
+    &__instagram-container--tailoring {
+      justify-content: center !important;
+      flex-direction: column;
+      width: 95%;
+    }
+
+    &__instagram--tailoring {
+      font-size: 15px !important;
+      margin-left: 0 !important;
+    }
+  }
+
+  .header--tailoring {
+    display: block !important;
+  }
+
+  .header-logo {
+    &__text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  }
+
+@media (min-width: 992px) and (max-width: 1600px) {
+  .tailoring {
+    &__text-block {
+      flex: 1;
+    }
+
+    &__title {
+      font-size: 57px;
+    }
+
+    &__free-desinger {
+      font-size: 25px;
+      margin: 30px 0 20px;
+    }
+
+    &__form {
+      padding: 30px 40px;
+
+      &__form--title {
+        font-size: 45px;
+      }
+
+      &--input {
+        padding: 20px 30px;
+      }
+
+      &--button {
+        padding: 30px 0;
+        font-size: 33px;
+      }
+    }
+  }
+}
+
+.tailoring__form-second-block .has-spinner__spinner img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}

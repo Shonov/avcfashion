@@ -1,0 +1,58 @@
+extends ../includes/main
+
+block body
+    section.section.section--main
+        .section__content.section__content--main
+            .section__slider-arrow.section__slider-arrow--left
+            .section__content-container
+                .section__cta
+                    | We specialize in fashion production
+                .section__cta
+                    | support from inception to completion.
+                a.section__button.section__button--more(href="/our_services.html")
+                    | learn more
+                .section__dot-container
+                    .section__dot.section__dot--active(data-id="0")
+                    .section__dot(data-id="1")
+            .section__slider-arrow.section__slider-arrow--right
+    section.section.section-free-consultation
+        .section__content.section-free-consultation__content
+            .section-free-consultation__row
+                .section-free-consultation__block.section-free-consultation__block--image-first
+                .section-free-consultation__block.section-free-consultation__form.free-consultation-form
+                    form.free-consultation-form__container
+                        .free-consultation-form__title Get a&nbsp;
+                            .free-consultation-form__title.free-consultation-form__title--blue
+                                | FREE
+                        .free-consultation-form__title consultation
+
+                        input.free-consultation-form__input(type="text", placeholder="Your name", name="name", required)
+                        input.free-consultation-form__input(type="text", placeholder="Phone", name="phone", required)
+                        button.has-spinner.free-consultation-form__button.free-consultation-form__button--submit(type="submit", value="Send") send
+                .section-free-consultation__block.section-free-consultation__block--image-second
+
+            .section-free-consultation__row
+                .section-free-consultation__block.section-free-consultation__block--link-box.section-free-consultation__block--image-first-second-row
+                    a.section-free-consultation__block-container(href="/clients.html")
+                        .section-free-consultation__link-container
+                            .section-free-consultation__link-text
+                                | Our
+                            .section-free-consultation__link-text
+                                | Clients
+                        .section-free-consultation__arrow
+                .section-free-consultation__block.section-free-consultation__block--link-box.section-free-consultation__block--image-second-second-row
+                    a.section-free-consultation__block-container(href="/about_us.html")
+                        .section-free-consultation__link-container
+                            .section-free-consultation__link-text
+                                | About
+                            .section-free-consultation__link-text
+                                | Us
+                        .section-free-consultation__arrow
+                .section-free-consultation__block.section-free-consultation__block--link-box.section-free-consultation__block--image-third-second-row
+                    a.section-free-consultation__block-container(href="/our_team.html")
+                        .section-free-consultation__link-container
+                            .section-free-consultation__link-text
+                                | Our
+                            .section-free-consultation__link-text
+                                | Team
+                        .section-free-consultation__arrow

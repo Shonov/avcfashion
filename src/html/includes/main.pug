@@ -1,0 +1,115 @@
+include ../includes/header.pug
+
+body
+    include ../includes/gtm-noscript.pug
+    header.header
+        .header__content.mobile-hidden
+            .header-logo
+                img.header-logo__img(src="../img/logo.png")
+                .header-logo__text-container
+                    .header-logo__text--logo AVC Fashion
+                    .header-logo__text--logo Design Consultancy
+                    .header-logo__text--utp  Creative & Efficient
+            .header-menu
+                .header-menu__top-container
+                    .header-menu__phone-container
+                        img.header-menu__icon(src="../img/icon/white/telephone.svg")
+                        a.header-menu__phone(href="tel:+79645547498") +7 (964) 554-74-98
+                    .header-menu__email-container
+                        img.header-menu__icon(src="../img/icon/white/e-mail.svg")
+                        a.header-menu__email(href="mailto:avcfashionconsultancy@gmail.com") avcfashionconsultancy@gmail.com
+                    .header-menu__instagram-container
+                        img.header-menu__icon(src="../img/icon/white/instagram.svg")
+                        a.header-menu__instagram(href="https://www.instagram.com/avc_fashion_consultancy/" target="_blank") avc_fashion_consultancy
+
+                .header-menu__bottom-container
+                    a.header-menu__item(href="/") Home
+                    a.header-menu__item(href="/about_us") About Us
+                    nav
+                        a.header-menu__item.services-menu(href="/our_services") Services
+                        ul.services-menu__down
+                            li.services-menu__item
+                                a(href="/our_services#concept-planning").services-menu__link Concept & Planning
+                            li.services-menu__item
+                                a(href="/our_services#identity").services-menu__link Identity
+                            li.services-menu__item
+                                a(href="/our_services#design-development").services-menu__link Design &
+                                    <br/>
+                                    | Development
+                            li.services-menu__item
+                                a(href="/our_services#presentation").services-menu__link Presentation
+                    a.header-menu__item.services-menu(href="/atelier") Atelier
+                    a.header-menu__item(href="/clients") Clients
+                    a.header-menu__item(href="/our_team") Our Team
+                    a.header-menu__item(href="/contact_us") Contact Us
+        .header__content.pc-hidden
+            .header-logo
+                img.header-logo__img(src="../img/logo.png")
+                .header-logo__text-container
+                    .header-logo__text--logo AVC Fashion
+                    .header-logo__text--logo Design Consultancy
+                    .header-logo__text--utp  Creative & Efficient
+            .header-menu
+                .header-menu__top-container
+                    .header-menu__phone-container
+                        img.header-menu__icon(src="../img/icon/white/telephone.svg")
+                        a.header-menu__phone(href="#") +7 (964) 554-74-98
+                    .header-menu__email-container
+                        img.header-menu__icon(src="../img/icon/white/e-mail.svg")
+                        a.header-menu__email(href="#") avcfashionconsultancy@gmail.com
+                .header-menu__middle-container
+                    .header-menu__socail-links
+                        .header-menu__instagram-container
+                            img.header-menu__icon(src="../img/icon/white/instagram.svg")
+                            a.header-menu__instagram(href="https://www.instagram.com/avc_fashion_consultancy/") avc_fashion_consultancy
+                    .header-menu__menu-container
+                        img.header-menu__menu-image(src="../img/menu-icon.png" id="header-mob-menu")
+                        .header-menu__mob-down-container(id="mob-down-container")
+                            .header-menu__mob-down-close-container
+                                img.header-menu__mob-down-close(src="img/close.png" id="close-mob-down")
+                            ul.header-menu__mob-down
+                                li.header-menu__mob-down-item
+                                    a(href="/").header-menu__mob-down-link Home
+                                li.header-menu__mob-down-item
+                                    a(href="/about_us").header-menu__mob-down-link About us
+                                li.header-menu__mob-down-item
+                                    a(href="/our_services").header-menu__mob-down-link Services
+                                li.header-menu__mob-down-item
+                                    a(href="/atelier").header-menu__mob-down-link Atelier
+                                li.header-menu__mob-down-item
+                                    a(href="/clients").header-menu__mob-down-link Clients
+                                li.header-menu__mob-down-item
+                                    a(href="/our_team").header-menu__mob-down-link Our team
+                                li.header-menu__mob-down-item
+                                    a(href="/contact_us").header-menu__mob-down-link Contact us
+
+
+    .sending-email-success
+        .sending-email-success__full-container
+            .sending-email-success__close-container
+                img.sending-email-success__close(src="../img/close.png")
+            .sending-email-success__title Thank You!
+            .sending-email-success__message Your message has been sent
+            .sending-email-success__back-link Back to the main page
+
+    MAIN.main
+        block body
+    footer.footer
+        .footer__content
+            .footer__copyright Copyright ©&nbsp;
+                code.footer__year 2019
+            .footer__menu
+                .footer__top
+                    a.footer__menu-item(href="/") Home
+                    a.footer__menu-item(href="/about_us") About Us
+                    a.footer__menu-item(href="/our_services") Services
+                    a.footer__menu-item(href="/atelier") Atelier
+                    a.footer__menu-item(href="/clients") Clients
+                    a.footer__menu-item(href="/our_team") Our Team
+                    a.footer__menu-item(href="/contact_us") Contact Us
+                .footer__social-links.header-menu__socail-links
+                    .header-menu__instagram-container
+                        img.header-menu__icon(src="../img/icon/white/instagram.svg")
+                        a.header-menu__instagram(href="https://www.instagram.com/avc_fashion_consultancy/") avc_fashion_consultancy
+            .footer__created-by Marketing by&nbsp;
+                a.footer__created-by-link(href="https://www.digitalfalcon.ae/") DIGITAL FALCON Inc.

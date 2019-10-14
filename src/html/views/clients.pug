@@ -1,0 +1,32 @@
+extends ../includes/main
+
+block body
+  section.container.container--main
+    .container__content
+      .outer-links-container
+        a.outer-link.outer-link--active(href="/") Home
+        | &nbsp; / &nbsp;
+        a.outer-link(href="our_services.html") Clients
+      h3.container__title Clients
+      .clients-container.clients
+        .client
+          img.client__image(src="../img/clients/kanzeh.png")
+          .client__info
+            .client__info--block
+              .client__title Title
+              .client__description Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              a.client__link(href="https://kanzeh.net/") Go to the website
+        .client
+          img.client__image(src="../img/clients/varsity_jackets.png")
+          .client__info
+            .client__info--block
+              .client__title Title
+              .client__description Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              a.client__link(href="#") Go to the website
+        .client
+          img.client__image.client--falcon(src="../img/clients/falcon_arab.png")
+          .client__info
+            .client__info--block
+              .client__title Title
+              .client__description Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              a.client__link(href="https://www.digitalfalcon.ae/") Go to the website

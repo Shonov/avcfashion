@@ -1,0 +1,215 @@
+.container {
+  &--main {
+    background: url("../img/our_team/our_team_bg.png") no-repeat;
+    background-size: cover;
+  }
+
+  &__content {
+    max-width: 1322px;
+    margin: 0 auto;
+    padding-top: 65px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 50px;
+    font-family: "Lintel", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    line-height: 0.769;
+    text-align: left;
+    letter-spacing: 3px;
+  }
+}
+
+.outer-links-container {
+  font-size: 14px;
+  font-family: "Lintel", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.786;
+  text-align: left;
+}
+
+.outer-link {
+  color: #797979;
+  text-decoration: none;
+  &--active {
+    color: white;
+  }
+}
+
+.teammate {
+  display: flex;
+  margin: 25px 0;
+
+  &:last-child {
+    margin-bottom: 140px;
+  }
+
+  &__photo-block {
+    width: 20%;
+  }
+
+  &__image {
+    width: 100%;
+    border: 5px solid white;
+    border-radius: 50%;
+  }
+
+  &__text-block {
+    width: 80%;
+    margin-left: 75px;
+    align-self: center;
+  }
+
+  &__about-self-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1.5px solid #656164;
+  }
+
+  &__about-self {
+
+  }
+
+  &__initials {
+    font-size: 30px;
+    font-family: "Lintel", sans-serif;
+    color: rgb(110, 172, 193);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    margin: 0;
+  }
+
+  &__job {
+    margin: 10px 0 15px 0;
+    font-size: 25px;
+    font-family: "Lintel", sans-serif;
+    line-height: 1.2;
+  }
+
+  &__social-links-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-links {
+    display: flex;
+    background-color: #111111;
+    border-radius: 10px;
+    padding: 10px 5px;
+  }
+
+  &__social-link {
+    margin: 0 7px;
+  }
+
+  &__social-image-container {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+  }
+
+  &__social-image {
+    min-height: 10px;
+    min-width: 20px;
+  }
+
+  &__description {
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: "Lintel", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: justify;
+
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .container {
+    &--main {
+      background: url("../img/our_team/our_team_bg-mobile.png") no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .outer-links-container {
+    display: none;
+  }
+
+  .container {
+    background-color: #1c1d1e;
+    &__title {
+      text-align: center;
+    }
+  }
+
+  .teammate {
+    position: relative;
+    flex-direction: column;
+    margin: 25px 20px 100px 20px;
+
+    &:last-child {
+      margin-bottom: 140px;
+    }
+
+    &__photo-block {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__image {
+      width: 80%;
+    }
+
+    &__text-block {
+      position: relative;
+      width: 100%;
+      margin-left: 0;
+    }
+
+    &__about-self-container {
+      margin-top: 40px;
+      flex-direction: column;
+    }
+
+    &__initials {
+      text-align: center;
+      padding: 0 30px;
+    }
+
+    &__job {
+      text-align: center;
+    }
+
+    &__social-links-container {
+      position: absolute;
+      top: 102%;
+      width: 100%;
+      margin: auto;
+      justify-content: center;
+    }
+
+    &__social-image-container {
+      width: 29px;
+      height: 29px;
+    }
+
+    &__social-image {
+      min-width: 25px;
+      min-height: 25px;
+    }
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1400px) {
+  .container--main {
+    padding: 0 60px;
+  }
+}
